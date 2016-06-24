@@ -15,7 +15,7 @@ float angle = PI/60;
 void setup() {
 
   unsigned char w;
-  w = pgm_read_byte(skull);
+  w = pgm_read_byte(img);
   TV.begin(NTSC,120,96);
   TV.select_font(font6x8);
   TV.bitmap(0,0,img);
